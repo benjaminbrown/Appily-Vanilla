@@ -1378,50 +1378,63 @@ p.settings-nl {
     font-size: 12px;
     font-weight: 300;
     text-align: center; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 314, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .spending-breakdown-box header h2 {
+        font-size: 16px;
+        text-align: left; } }
     @media only screen and (min-width: 64.0625em) {
       /* line 314, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
       .spending-breakdown-box header h2 {
-        font-size: 21px;
-        text-align: left; } }
-  /* line 323, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        font-size: 21px; } }
+  /* line 326, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
   .spending-breakdown-box header .expand-panel {
     position: absolute;
     top: 0;
     right: 0; }
 
-/* line 329, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+/* line 332, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
 .spending-breakdown-box .spend-categories {
   font-size: 18px;
   font-weight: 500; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 332, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .spending-breakdown-box .spend-categories {
+      font-size: 24px; } }
   @media only screen and (min-width: 64.0625em) {
-    /* line 329, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    /* line 332, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
     .spending-breakdown-box .spend-categories {
       font-size: 32px; } }
-  /* line 335, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  /* line 341, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
   .spending-breakdown-box .spend-categories li {
     list-style-type: none;
     margin-bottom: 20px;
     text-align: center; }
-    @media only screen and (min-width: 64.0625em) {
-      /* line 335, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    @media only screen and (min-width: 40.0625em) {
+      /* line 341, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
       .spending-breakdown-box .spend-categories li {
         text-align: left; } }
-  /* line 344, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  /* line 350, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
   .spending-breakdown-box .spend-categories a {
     color: #262626;
     line-height: 0.5;
     text-decoration: none; }
-    /* line 348, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    /* line 354, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
     .spending-breakdown-box .spend-categories a .spend-breakdown {
       display: block;
       font-weight: 200;
       font-size: 14px; }
+      @media only screen and (min-width: 40.0625em) {
+        /* line 354, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .spending-breakdown-box .spend-categories a .spend-breakdown {
+          font-size: 18px;
+          padding-left: 42px; } }
       @media only screen and (min-width: 64.0625em) {
-        /* line 348, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        /* line 354, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
         .spending-breakdown-box .spend-categories a .spend-breakdown {
           font-size: 23px;
           padding-left: 42px; } }
-    /* line 357, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    /* line 367, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
     .spending-breakdown-box .spend-categories a .key {
       width: 11px;
       height: 11px;
@@ -1429,27 +1442,27 @@ p.settings-nl {
       border-radius: 4px;
       background: #262626;
       display: block; }
-      /* line 364, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      /* line 374, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
       .spending-breakdown-box .spend-categories a .key.key-1 {
         background-color: #63f5a4; }
-      /* line 367, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      /* line 377, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
       .spending-breakdown-box .spend-categories a .key.key-2 {
         background-color: #41dadc; }
-      /* line 370, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      /* line 380, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
       .spending-breakdown-box .spend-categories a .key.key-3 {
         background-color: #fbb256; }
-      /* line 373, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      /* line 383, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
       .spending-breakdown-box .spend-categories a .key.key-4 {
         background-color: #f46a6e; }
-      @media only screen and (min-width: 64.0625em) {
-        /* line 357, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      @media only screen and (min-width: 40.0625em) {
+        /* line 367, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
         .spending-breakdown-box .spend-categories a .key {
           margin-right: 12px;
           width: 20px;
           height: 20px;
           display: inline-block; } }
 
-/* line 392, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+/* line 402, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
 .svg-clipped {
   -webkit-clip-path: url(#svgPath);
   clip-path: url(#svgPath); }

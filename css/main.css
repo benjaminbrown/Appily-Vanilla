@@ -1126,10 +1126,13 @@ p.settings-nl {
     font-size: 12px;
     font-weight: 300;
     text-align: center; }
+    @media only screen and (min-width: 40.0625em) {
+      .spending-breakdown-box header h2 {
+        font-size: 16px;
+        text-align: left; } }
     @media only screen and (min-width: 64.0625em) {
       .spending-breakdown-box header h2 {
-        font-size: 21px;
-        text-align: left; } }
+        font-size: 21px; } }
   .spending-breakdown-box header .expand-panel {
     position: absolute;
     top: 0;
@@ -1137,6 +1140,9 @@ p.settings-nl {
 .spending-breakdown-box .spend-categories {
   font-size: 18px;
   font-weight: 500; }
+  @media only screen and (min-width: 40.0625em) {
+    .spending-breakdown-box .spend-categories {
+      font-size: 24px; } }
   @media only screen and (min-width: 64.0625em) {
     .spending-breakdown-box .spend-categories {
       font-size: 32px; } }
@@ -1144,7 +1150,7 @@ p.settings-nl {
     list-style-type: none;
     margin-bottom: 20px;
     text-align: center; }
-    @media only screen and (min-width: 64.0625em) {
+    @media only screen and (min-width: 40.0625em) {
       .spending-breakdown-box .spend-categories li {
         text-align: left; } }
   .spending-breakdown-box .spend-categories a {
@@ -1155,6 +1161,10 @@ p.settings-nl {
       display: block;
       font-weight: 200;
       font-size: 14px; }
+      @media only screen and (min-width: 40.0625em) {
+        .spending-breakdown-box .spend-categories a .spend-breakdown {
+          font-size: 18px;
+          padding-left: 42px; } }
       @media only screen and (min-width: 64.0625em) {
         .spending-breakdown-box .spend-categories a .spend-breakdown {
           font-size: 23px;
@@ -1174,7 +1184,7 @@ p.settings-nl {
         background-color: #fbb256; }
       .spending-breakdown-box .spend-categories a .key.key-4 {
         background-color: #f46a6e; }
-      @media only screen and (min-width: 64.0625em) {
+      @media only screen and (min-width: 40.0625em) {
         .spending-breakdown-box .spend-categories a .key {
           margin-right: 12px;
           width: 20px;

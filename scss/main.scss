@@ -315,9 +315,12 @@ p.settings-nl {
       font-size: $para-small;
       font-weight: $font-med;
       text-align: center;
+      @media #{$medium-up} {
+        font-size: $base-font-size;
+        text-align: left;
+      }
       @media #{$large-up} {
         font-size: 21px;
-        text-align: left;
       }
     }
     .expand-panel {
@@ -329,6 +332,9 @@ p.settings-nl {
   .spend-categories {
     font-size: 18px;
     font-weight: $font-heavy;
+    @media #{$medium-up} {
+      font-size: 24px;
+    }
     @media #{$large-up} {
       font-size: 32px;
     }
@@ -336,7 +342,7 @@ p.settings-nl {
       list-style-type: none;
       margin-bottom: 20px;
       text-align: center;
-      @media #{$large-up} {
+      @media #{$medium-up} {
         text-align: left;
 
       }
@@ -349,6 +355,10 @@ p.settings-nl {
         display: block;
         font-weight: $font-light;
         font-size: 14px;
+        @media #{$medium-up} {
+          font-size: 18px;
+          padding-left: 42px;
+        }
         @media #{$large-up} {
           font-size: 23px;
           padding-left: 42px;
@@ -373,7 +383,7 @@ p.settings-nl {
         &.key-4 {
           background-color: $red-main;
         }
-        @media #{$large-up} {
+        @media #{$medium-up} {
           margin-right: 12px;
           width: 20px;
           height: 20px;
