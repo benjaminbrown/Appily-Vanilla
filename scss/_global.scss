@@ -1,0 +1,150 @@
+// Global Stuff
+
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $font-med;
+  line-height: 1.5;
+  color: $dark-main;
+  background: $white-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mob-only {
+  display: block;
+  @media #{$medium-up} {
+    display: none;
+  }
+}
+
+.med-up-only {
+  display: none;
+  @media #{$medium-up} {
+    display: block;
+  }
+}
+
+// Header Defaults
+$header-logo-size: 113px;
+$header-h1-text: 22px;
+$header-intro-text: 11px;
+
+
+.global-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  z-index: 3;
+  padding-top: 22px;
+  
+  header {
+    margin-bottom: 30px;
+      .logo {
+        display: inline-block;
+
+
+        .logo-image {
+          width: $header-logo-size;
+          margin-top: 6px;
+          @include transition(all .3s ease);
+          &:hover {
+            transform: scale(1.1);
+          }
+          @media #{$medium-up} {
+            width: $header-logo-size * 1.2;
+          }
+          @media #{$large-up} {
+            width: $header-logo-size * 1.3;
+          }
+        }
+    }
+  }
+  
+  .menu-button {
+    padding: 0;
+    width: 50px;
+    height: 16px;
+    margin-top: 12px;
+    position: absolute;
+    right: 0;
+    background: url(../img/menu.svg) no-repeat;
+    @include transition(all .3s ease);
+  }
+
+  .menu-button:hover {
+	transform: scale(1.2)
+  }
+  
+  .call-us-btn {
+    background-color: $white-mid;
+    background-image: url(../img/phone-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 50% 50%;
+    display: block;
+    padding: 20px;
+    position: absolute;
+    left: 24px;
+    font-size: $para-xs;
+    border-radius: 4px;
+      @media #{$medium-up} {
+        background-position: 8px 50%;
+        padding: 14px 10px;
+        padding-left: 32px; 
+        background-size: 17px 17px;
+      }
+    
+      .btn-text {
+        display: none;
+          @media #{$medium-up} {
+            display: block;
+        }
+      }
+
+  }
+  
+  h1 {
+    font-size: $header-h1-text;
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto;
+    @media #{$medium-up} {
+      font-size: $header-h1-text * 2;
+    }
+    @media #{$large-up} {
+      font-size: $header-h1-text * 2.4;
+      width: 70%;
+    }
+  }
+  
+  a {
+    color: $dark-tint;
+    text-decoration: underline;
+  }
+  
+  p {
+    font-size: $header-intro-text;
+    color: $dark-secondary;
+    @media #{$medium-up} {
+    font-size: $header-intro-text * 1.5;
+    }
+  }
+}
+
+
+img.small-green-smile {
+  width: 25px;
+}

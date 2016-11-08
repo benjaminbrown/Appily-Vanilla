@@ -1,0 +1,1457 @@
+/* 0, 640px */
+/* 641px, 1024px */
+/* 1025px, 1440px */
+/* 1441px, 1920px */
+/* 1921px, ... */
+/* line 35, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_typography.scss */
+h2.section-number {
+  font-weight: 500;
+  font-size: 24px; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 35, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_typography.scss */
+    h2.section-number {
+      font-size: 28px; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 35, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_typography.scss */
+    h2.section-number {
+      font-size: 32px; } }
+
+/* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_typography.scss */
+h3.section-title {
+  font-size: 12px;
+  font-weight: 300;
+  color: #727272;
+  padding-left: 24px;
+  background-image: url(../img/smile.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 50%; }
+  /* line 55, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_typography.scss */
+  h3.section-title.indent {
+    margin-left: -24px;
+    margin-bottom: 30px; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_typography.scss */
+    h3.section-title {
+      font-size: 16px; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_typography.scss */
+    h3.section-title {
+      font-size: 23px; } }
+
+/* line 1, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+button[data-balloon] {
+  overflow: visible; }
+
+/* line 4, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon] {
+  position: relative; }
+
+/* line 8, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon]:before,
+[data-balloon]:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.18s ease-out 0.18s;
+  transition: all 0.18s ease-out 0.18s;
+  bottom: 100%;
+  left: 50%;
+  position: absolute;
+  z-index: 10;
+  -webkit-transform: translate(-50%, 10px);
+  -ms-transform: translate(-50%, 10px);
+  transform: translate(-50%, 10px);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top; }
+
+/* line 28, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon]:after {
+  background: rgba(17, 17, 17, 0.9);
+  border-radius: 4px;
+  color: #fff;
+  content: attr(data-balloon);
+  font-size: 12px;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+  margin-bottom: 11px; }
+
+/* line 38, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon]:before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36px" height="12px"><path fill="rgba(17, 17, 17, 0.9)" transform="rotate(0)" d="M2.658,0.000 C-13.615,0.000 50.938,0.000 34.662,0.000 C28.662,0.000 23.035,12.002 18.660,12.002 C14.285,12.002 8.594,0.000 2.658,0.000 Z"/></svg>') no-repeat;
+  background-size: 100% auto;
+  height: 6px;
+  width: 18px;
+  content: "";
+  margin-bottom: 5px; }
+
+/* line 49, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon]:hover:before,
+[data-balloon][data-balloon-visible]:before,
+[data-balloon]:hover:after,
+[data-balloon][data-balloon-visible]:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+/* line 60, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon][data-balloon-break]:after {
+  white-space: normal; }
+
+/* line 64, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="down"]:before,
+[data-balloon-pos="down"]:after {
+  bottom: auto;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -10px);
+  -ms-transform: translate(-50%, -10px);
+  transform: translate(-50%, -10px); }
+
+/* line 72, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="down"]:after {
+  margin-top: 11px; }
+
+/* line 75, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="down"]:before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36px" height="12px"><path fill="rgba(17, 17, 17, 0.9)" transform="rotate(180 18 6)" d="M2.658,0.000 C-13.615,0.000 50.938,0.000 34.662,0.000 C28.662,0.000 23.035,12.002 18.660,12.002 C14.285,12.002 8.594,0.000 2.658,0.000 Z"/></svg>') no-repeat;
+  background-size: 100% auto;
+  height: 6px;
+  width: 18px;
+  margin-top: 5px;
+  margin-bottom: 0; }
+
+/* line 86, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="down"]:hover:before,
+[data-balloon-pos="down"][data-balloon-visible]:before,
+[data-balloon-pos="down"]:hover:after,
+[data-balloon-pos="down"][data-balloon-visible]:after {
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+/* line 92, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="left"]:before,
+[data-balloon-pos="left"]:after {
+  bottom: auto;
+  left: auto;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translate(10px, -50%);
+  -ms-transform: translate(10px, -50%);
+  transform: translate(10px, -50%); }
+
+/* line 101, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="left"]:after {
+  margin-right: 11px; }
+
+/* line 104, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="left"]:before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12px" height="36px"><path fill="rgba(17, 17, 17, 0.9)" transform="rotate(-90 18 18)" d="M2.658,0.000 C-13.615,0.000 50.938,0.000 34.662,0.000 C28.662,0.000 23.035,12.002 18.660,12.002 C14.285,12.002 8.594,0.000 2.658,0.000 Z"/></svg>') no-repeat;
+  background-size: 100% auto;
+  height: 18px;
+  width: 6px;
+  margin-right: 5px;
+  margin-bottom: 0; }
+
+/* line 115, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="left"]:hover:before,
+[data-balloon-pos="left"][data-balloon-visible]:before,
+[data-balloon-pos="left"]:hover:after,
+[data-balloon-pos="left"][data-balloon-visible]:after {
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+/* line 121, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="right"]:before,
+[data-balloon-pos="right"]:after {
+  bottom: auto;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-10px, -50%);
+  -ms-transform: translate(-10px, -50%);
+  transform: translate(-10px, -50%); }
+
+/* line 129, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="right"]:after {
+  margin-left: 11px; }
+
+/* line 132, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="right"]:before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12px" height="36px"><path fill="rgba(17, 17, 17, 0.9)" transform="rotate(90 6 6)" d="M2.658,0.000 C-13.615,0.000 50.938,0.000 34.662,0.000 C28.662,0.000 23.035,12.002 18.660,12.002 C14.285,12.002 8.594,0.000 2.658,0.000 Z"/></svg>') no-repeat;
+  background-size: 100% auto;
+  height: 18px;
+  width: 6px;
+  margin-bottom: 0;
+  margin-left: 5px; }
+
+/* line 143, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-pos="right"]:hover:before,
+[data-balloon-pos="right"][data-balloon-visible]:before,
+[data-balloon-pos="right"]:hover:after,
+[data-balloon-pos="right"][data-balloon-visible]:after {
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+/* line 148, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-length]:after {
+  white-space: normal; }
+
+/* line 151, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-length="small"]:after {
+  width: 80px; }
+
+/* line 154, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-length="medium"]:after {
+  width: 150px; }
+
+/* line 157, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-length="large"]:after {
+  width: 260px; }
+
+/* line 160, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-length="xlarge"]:after {
+  width: 90vw; }
+
+@media screen and (min-width: 768px) {
+  /* line 164, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+  [data-balloon-length="xlarge"]:after {
+    width: 380px; } }
+
+/* line 168, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_tooltips.scss */
+[data-balloon-length="fit"]:after {
+  width: 100%; }
+
+/* line 120, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+.can-toggle {
+  position: relative; }
+  /* line 122, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle *, .can-toggle *:before, .can-toggle *:after {
+    box-sizing: border-box; }
+  /* line 125, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    /* line 130, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle input[type="checkbox"][disabled] ~ label {
+      pointer-events: none; }
+      /* line 132, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle input[type="checkbox"][disabled] ~ label .can-toggle__switch {
+        opacity: 0.4; }
+    /* line 140, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:before {
+      content: attr(data-unchecked);
+      left: 0; }
+    /* line 145, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+      content: attr(data-checked); }
+  /* line 158, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle label {
+    user-select: none;
+    position: relative;
+    display: flex;
+    align-items: center; }
+    /* line 164, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle label .can-toggle__label-text {
+      flex: 1;
+      padding-left: 32px; }
+    /* line 169, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle label .can-toggle__switch {
+      position: relative; }
+      /* line 172, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle label .can-toggle__switch:before {
+        content: attr(data-checked);
+        position: absolute;
+        top: 0;
+        text-transform: uppercase;
+        text-align: center; }
+      /* line 180, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle label .can-toggle__switch:after {
+        content: attr(data-unchecked);
+        position: absolute;
+        z-index: 5;
+        text-transform: uppercase;
+        text-align: center;
+        background: white;
+        transform: translate3d(0, 0, 0); }
+  /* line 14, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+    color: #e6e6e6; }
+  /* line 17, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"]:hover ~ label {
+    color: #f2f2f2; }
+  /* line 20, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"]:checked ~ label:hover {
+    color: #1e1e1e; }
+  /* line 22, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch {
+    background-color: #333333; }
+    /* line 24, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+      color: #191919; }
+  /* line 30, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+    background-color: #262626; }
+    /* line 32, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+      color: #0d0d0d; }
+  /* line 41, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle label .can-toggle__label-text {
+    flex: 1; }
+  /* line 43, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle label .can-toggle__switch {
+    transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+    background: white; }
+    /* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle label .can-toggle__switch:before {
+      color: #262626; }
+    /* line 47, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle label .can-toggle__switch:after {
+      -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+      transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+      color: #ffffff; }
+  /* line 76, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    transform: translate3d(63px, 0, 0); }
+  /* line 81, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4); }
+  /* line 87, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle label {
+    font-size: 16px; }
+    /* line 90, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle label .can-toggle__switch {
+      height: 54px;
+      flex: 0 0 134px;
+      border-radius: 50px; }
+      /* line 95, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle label .can-toggle__switch:before {
+        left: 67px;
+        font-size: 16px;
+        line-height: 54px;
+        width: 67px;
+        padding: 0 12px; }
+      /* line 103, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle label .can-toggle__switch:after {
+        top: 4px;
+        left: 4px;
+        border-radius: 25px;
+        width: 63px;
+        line-height: 46px;
+        font-size: 16px; }
+      /* line 112, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle label .can-toggle__switch:hover:after {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4); }
+  /* line 76, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.can-toggle--size-small input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    transform: translate3d(44px, 0, 0); }
+  /* line 81, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.can-toggle--size-small input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-small input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); }
+  /* line 87, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.can-toggle--size-small label {
+    font-size: 13px; }
+    /* line 90, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.can-toggle--size-small label .can-toggle__switch {
+      height: 28px;
+      flex: 0 0 90px;
+      border-radius: 2px; }
+      /* line 95, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.can-toggle--size-small label .can-toggle__switch:before {
+        left: 45px;
+        font-size: 10px;
+        line-height: 28px;
+        width: 45px;
+        padding: 0 12px; }
+      /* line 103, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.can-toggle--size-small label .can-toggle__switch:after {
+        top: 1px;
+        left: 1px;
+        border-radius: 1px;
+        width: 44px;
+        line-height: 26px;
+        font-size: 10px; }
+      /* line 112, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.can-toggle--size-small label .can-toggle__switch:hover:after {
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); }
+  /* line 76, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.can-toggle--size-large input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    transform: translate3d(78px, 0, 0); }
+  /* line 81, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.can-toggle--size-large input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.can-toggle--size-large input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); }
+  /* line 87, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.can-toggle--size-large label {
+    font-size: 14px; }
+    /* line 90, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.can-toggle--size-large label .can-toggle__switch {
+      height: 50px;
+      flex: 0 0 160px;
+      border-radius: 4px; }
+      /* line 95, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.can-toggle--size-large label .can-toggle__switch:before {
+        left: 80px;
+        font-size: 14px;
+        line-height: 50px;
+        width: 80px;
+        padding: 0 12px; }
+      /* line 103, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.can-toggle--size-large label .can-toggle__switch:after {
+        top: 2px;
+        left: 2px;
+        border-radius: 2px;
+        width: 78px;
+        line-height: 46px;
+        font-size: 14px; }
+      /* line 112, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.can-toggle--size-large label .can-toggle__switch:hover:after {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); }
+  /* line 14, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-1 input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+    color: #8f315c; }
+  /* line 17, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label {
+    color: #a23768; }
+  /* line 20, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label:hover {
+    color: #39916a; }
+  /* line 22, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label .can-toggle__switch {
+    background-color: #44ae7f; }
+    /* line 24, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+      color: #368a65; }
+  /* line 30, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+    background-color: #3d9c72; }
+    /* line 32, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+      color: #2f7757; }
+  /* line 41, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-1 label .can-toggle__label-text {
+    flex: 1; }
+  /* line 43, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-1 label .can-toggle__switch {
+    transition: background-color 0.3s ease-in-out;
+    background: #c14b81; }
+    /* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-1 label .can-toggle__switch:before {
+      color: rgba(255, 255, 255, 0.6); }
+    /* line 47, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-1 label .can-toggle__switch:after {
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      color: #b53e74; }
+  /* line 14, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-2 input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
+    color: #2b2b2b; }
+  /* line 17, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 input[type="checkbox"]:hover ~ label {
+    color: #373737; }
+  /* line 20, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label:hover {
+    color: #62b125; }
+  /* line 22, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label .can-toggle__switch {
+    background-color: #75d32d; }
+    /* line 24, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+      color: #5da924; }
+  /* line 30, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch {
+    background-color: #69be28; }
+    /* line 32, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+      color: #52941f; }
+  /* line 41, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 label .can-toggle__label-text {
+    flex: 1; }
+  /* line 43, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 label .can-toggle__switch {
+    transition: background-color 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+    background: #515151; }
+    /* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-2 label .can-toggle__switch:before {
+      color: rgba(255, 255, 255, 0.7); }
+    /* line 47, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-2 label .can-toggle__switch:after {
+      -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+      transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+      color: #444; }
+  /* line 76, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
+    transform: translate3d(58px, 0, 0); }
+  /* line 81, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-2 input[type="checkbox"]:checked:hover ~ label .can-toggle__switch:after {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); }
+  /* line 87, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+  .can-toggle.demo-rebrand-2 label {
+    font-size: 13px; }
+    /* line 90, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+    .can-toggle.demo-rebrand-2 label .can-toggle__switch {
+      height: 60px;
+      flex: 0 0 120px;
+      border-radius: 60px; }
+      /* line 95, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.demo-rebrand-2 label .can-toggle__switch:before {
+        left: 60px;
+        font-size: 13px;
+        line-height: 60px;
+        width: 60px;
+        padding: 0 12px; }
+      /* line 103, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.demo-rebrand-2 label .can-toggle__switch:after {
+        top: 2px;
+        left: 2px;
+        border-radius: 30px;
+        width: 58px;
+        line-height: 56px;
+        font-size: 13px; }
+      /* line 112, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_switches.scss */
+      .can-toggle.demo-rebrand-2 label .can-toggle__switch:hover:after {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); }
+
+/* line 13, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "filson-soft", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #262626;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 26, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+.mob-only {
+  display: block; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 26, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+    .mob-only {
+      display: none; } }
+
+/* line 33, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+.med-up-only {
+  display: none; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 33, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+    .med-up-only {
+      display: block; } }
+
+/* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+.global-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  z-index: 3;
+  padding-top: 22px; }
+  /* line 53, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+  .global-header header {
+    margin-bottom: 30px; }
+    /* line 55, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+    .global-header header .logo {
+      display: inline-block; }
+      /* line 59, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+      .global-header header .logo .logo-image {
+        width: 113px;
+        margin-top: 6px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        /* line 63, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+        .global-header header .logo .logo-image:hover {
+          transform: scale(1.1); }
+        @media only screen and (min-width: 40.0625em) {
+          /* line 59, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+          .global-header header .logo .logo-image {
+            width: 135.6px; } }
+        @media only screen and (min-width: 64.0625em) {
+          /* line 59, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+          .global-header header .logo .logo-image {
+            width: 146.9px; } }
+  /* line 76, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+  .global-header .menu-button {
+    padding: 0;
+    width: 50px;
+    height: 16px;
+    margin-top: 12px;
+    position: absolute;
+    right: 0;
+    background: url(../img/menu.svg) no-repeat;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  /* line 87, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+  .global-header .menu-button:hover {
+    transform: scale(1.2); }
+  /* line 91, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+  .global-header .call-us-btn {
+    background-color: #e8e8e8;
+    background-image: url(../img/phone-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 50% 50%;
+    display: block;
+    padding: 20px;
+    position: absolute;
+    left: 24px;
+    font-size: 11px;
+    border-radius: 4px; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 91, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+      .global-header .call-us-btn {
+        background-position: 8px 50%;
+        padding: 14px 10px;
+        padding-left: 32px;
+        background-size: 17px 17px; } }
+    /* line 110, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+    .global-header .call-us-btn .btn-text {
+      display: none; }
+      @media only screen and (min-width: 40.0625em) {
+        /* line 110, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+        .global-header .call-us-btn .btn-text {
+          display: block; } }
+  /* line 119, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+  .global-header h1 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 90%;
+    margin: 0 auto; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 119, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+      .global-header h1 {
+        font-size: 44px; } }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 119, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+      .global-header h1 {
+        font-size: 52.8px;
+        width: 70%; } }
+  /* line 133, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+  .global-header a {
+    color: #000000;
+    text-decoration: underline; }
+  /* line 138, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+  .global-header p {
+    font-size: 11px;
+    color: #727272; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 138, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+      .global-header p {
+        font-size: 16.5px; } }
+
+/* line 148, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_global.scss */
+img.small-green-smile {
+  width: 25px; }
+
+/* line 4, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+html,
+body,
+.container,
+.content-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+/* line 10, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.menu-wrap a {
+  color: #262626; }
+  /* line 12, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+  .menu-wrap a:hover, .menu-wrap a:focus {
+    color: #000000;
+    text-decoration: underline; }
+
+/* line 18, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.content-wrap {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s; }
+
+/* line 25, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.content {
+  position: relative; }
+  /* line 27, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+  .content:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+    transition: opacity 0.3s, transform 0s 0.3s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+
+/* Close Button */
+/* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.close-button {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  overflow: hidden;
+  text-indent: 16px;
+  border: none;
+  z-index: 1001;
+  background: transparent;
+  color: transparent; }
+  /* line 58, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+  .close-button:before, .close-button:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: #262626; }
+  /* line 67, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+  .close-button:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  /* line 71, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+  .close-button:after {
+    webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+/* Menu */
+/* line 78, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.menu-wrap {
+  position: absolute;
+  z-index: 1001;
+  width: 300px;
+  height: 100%;
+  -webkit-transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s; }
+  /* line 87, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+  .menu-wrap .menu {
+    background: #63f5a4;
+    width: calc(100% - 120px);
+    height: 100%;
+    padding: 2em 1em;
+    color: #fff; }
+    /* line 93, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+    .menu-wrap .menu .menu-items {
+      margin-top: 18px;
+      font-weight: 500;
+      font-size: 16px;
+      list-style-type: none; }
+      /* line 98, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+      .menu-wrap .menu .menu-items li {
+        margin-bottom: 18px; }
+
+/* Morph Shape */
+/* line 107, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.morph-shape {
+  position: absolute;
+  width: 120px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  fill: #63f5a4;
+  z-index: 1000; }
+
+/* Shown menu */
+/* line 118, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.show-menu .menu-wrap {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 123, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.show-menu .content-wrap {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: translate3d(100px, 0, 0);
+  transform: translate3d(100px, 0, 0); }
+
+/* line 130, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_menu.scss */
+.show-menu .content::before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 3, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+button {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  /* line 5, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+  button:hover {
+    transform: scale(1.1); }
+
+/* line 10, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.square-btn-lrg {
+  border-radius: 4px;
+  padding: 24px;
+  color: #262626;
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center; }
+
+/* line 20, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.square-btn-sml {
+  border-radius: 4px;
+  padding: 14px;
+  color: #262626;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 20, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+    .square-btn-sml {
+      padding: 24px; } }
+
+/* line 34, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.pill-btn-sml {
+  text-align: center;
+  border-radius: 400px;
+  padding: 14px 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  float: right; }
+
+/* line 44, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.aqua-btn {
+  background-color: #63f5a4; }
+  /* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+  .aqua-btn:hover {
+    background-color: #54e885; }
+
+/* line 51, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.ghost-btn {
+  background-color: transparent;
+  border: 1px solid #e8e8e8;
+  font-weight: 500; }
+
+/* line 57, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.orange-btn {
+  background-color: #fbb256; }
+  /* line 59, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+  .orange-btn:hover {
+    background-color: #fb9049; }
+
+/* line 64, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.the-help {
+  color: #262626;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  /* line 68, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+  .the-help:hover {
+    transform: scale(1.1);
+    color: #000000; }
+  /* line 72, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+  .the-help .help-text {
+    display: none;
+    text-decoration: underline;
+    font-style: normal;
+    padding-right: 6px;
+    font-weight: 500; }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 72, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+      .the-help .help-text {
+        display: inline-block; } }
+  /* line 82, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+  .the-help .help-icon {
+    width: 35px;
+    height: 29px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding-top: 3px;
+    float: right;
+    display: inline-block;
+    background-image: url(../img/help-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 35px 29px;
+    transform: scale(1); }
+
+/* line 99, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.help-wrapper .help-text {
+  color: #fff; }
+
+/* line 102, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.help-wrapper .help-icon {
+  float: none; }
+
+/* line 108, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_buttons.scss */
+.expand-panel .expand-icon {
+  width: 14px;
+  padding-left: 3px; }
+
+/* Appform */
+/* line 3, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.appform {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 0 36px; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 3, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+    .appform {
+      margin-top: 0; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 3, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+    .appform {
+      margin-top: 20px; } }
+  /* line 14, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+  .appform .help-text {
+    display: none; }
+
+/* line 20, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+a.form-link-block {
+  clear: both;
+  text-decoration: underline;
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #262626;
+  font-weight: 300;
+  font-size: 12px;
+  background: #f5f5f5;
+  display: block;
+  padding: 0;
+  padding: 12px 0; }
+
+/* line 37, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.form-row {
+  height: 60px;
+  margin-bottom: 20px;
+  position: relative; }
+
+/* line 43, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.input-text {
+  padding: 0;
+  border: none;
+  height: 40px;
+  border-bottom: 3px solid #e8e8e8;
+  width: 100%;
+  border-radius: 0;
+  font-size: 24px;
+  color: #e8e8e8;
+  font-weight: 300;
+  background: none; }
+
+/* line 56, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+select.input-text {
+  color: #ccc;
+  background-image: url(../img/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 8px;
+  background-position: 98% 50%; }
+
+/* line 64, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.input-text.with-help {
+  width: 75%; }
+
+/* line 68, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.input-text.with-button {
+  width: 50%; }
+
+/* line 73, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.label-helper {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 300;
+  opacity: 0;
+  transition: 0.2s bottom, 0.2s opacity;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+
+/* line 85, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.input-text:focus,
+select.input-text:focus {
+  border-bottom: 3px solid #63f5a4;
+  color: #262626;
+  font-weight: 500;
+  outline: none; }
+
+/* line 92, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+input.input-text:not(:focus) {
+  color: #262626; }
+
+/* line 96, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.input-text:focus + .label-helper, .input-text:invalid + .label-helper {
+  bottom: 95%;
+  opacity: 1; }
+
+/* line 102, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.input-text:invalid + .label-helper::after {
+  color: #f00;
+  content: "X"; }
+
+/* line 114, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+.toggle-switches {
+  border: 2px solid #e8e8e8;
+  border-radius: 50px;
+  background: #ffffff;
+  width: 96%;
+  padding: 4px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  list-style-type: none; }
+  /* line 125, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+  .toggle-switches .switch {
+    width: 49%;
+    display: inline-block; }
+    /* line 128, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+    .toggle-switches .switch .switch-link {
+      width: 100%;
+      color: #ffffff;
+      display: inline-block;
+      background: #fbb256;
+      font-weight: 500;
+      padding: 12px;
+      border-radius: 50px; }
+      /* line 136, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+      .toggle-switches .switch .switch-link:hover {
+        background: #fb9049; }
+      /* line 139, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+      .toggle-switches .switch .switch-link.inactive {
+        background: #ffffff;
+        font-weight: 300;
+        text-decoration: underline;
+        color: #262626; }
+
+/* line 150, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+select.input-text.inline-select {
+  background-image: url(../img/down-arrow-blue.svg);
+  background-position: 85% 50%;
+  background-color: #ffffff;
+  border: 2px solid #41dadc;
+  border-radius: 4px;
+  display: inline-block;
+  width: auto;
+  min-width: 70px;
+  height: auto;
+  color: #41dadc;
+  font-size: 16px;
+  padding: 10px;
+  padding-right: 30px;
+  margin: 4px 6px;
+  font-weight: 500; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 150, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+    select.input-text.inline-select {
+      font-size: 18px;
+      min-width: 90px; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 150, /Applications/MAMP/htdocs/Appily-Vanilla/scss/_forms.scss */
+    select.input-text.inline-select {
+      font-size: 22px; } }
+
+/* line 13, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.smile-header-container {
+  height: 160px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -110px;
+  position: relative;
+  z-index: 2; }
+  /* line 21, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .smile-header-container.aqua-container {
+    height: 100px; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 21, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .smile-header-container.aqua-container {
+        height: 140px; } }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 21, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .smile-header-container.aqua-container {
+        height: 190px; } }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 13, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .smile-header-container {
+      margin-top: -130px;
+      height: 230px; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 13, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .smile-header-container {
+      margin-top: -200px;
+      height: 260px; } }
+
+/* line 46, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.smile-header {
+  background: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 200%;
+  margin-top: -188%;
+  margin-left: -50%;
+  padding-bottom: 200%;
+  border: 45px solid #f5f5f5; }
+  /* line 58, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .smile-header.aqua-smile {
+    border-color: #63f5a4;
+    background: #63f5a4;
+    margin-top: 0;
+    margin-bottom: -188%;
+    padding-bottom: 100%; }
+
+/* line 69, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.balance-box {
+  background: #41dadc;
+  padding: 100px 0 150px 0;
+  text-align: center;
+  z-index: -1;
+  margin-top: -90px; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 69, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .balance-box {
+      margin-top: -160px;
+      padding-top: 160px; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 69, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .balance-box {
+      margin-top: -200px;
+      padding-top: 220px; } }
+  /* line 84, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .balance-box .balance {
+    position: relative; }
+  /* line 88, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .balance-box .balance .the-help {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    color: #35bbbd; }
+  /* line 95, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .balance-box .repay, .balance-box .next-statement {
+    margin-top: 20px; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 95, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .balance-box .repay, .balance-box .next-statement {
+        margin-top: 0; } }
+  /* line 102, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .balance-box h2, .balance-box h3 {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: -2px; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 102, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .balance-box h2, .balance-box h3 {
+        font-size: 15px; } }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 102, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .balance-box h2, .balance-box h3 {
+        font-size: 21px; } }
+  /* line 115, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .balance-box h2 + span {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 500; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 115, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .balance-box h2 + span {
+        font-size: 42px; } }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 115, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .balance-box h2 + span {
+        font-size: 56px; } }
+  /* line 128, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .balance-box h3 + span {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 300; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 128, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .balance-box h3 + span {
+        font-size: 42px; } }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 128, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .balance-box h3 + span {
+        font-size: 56px; } }
+
+/* line 142, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.shadow-box {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px 15px 15px 15px;
+  border-radius: 4px;
+  margin-top: -130px;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #63f5a4; }
+
+/* line 154, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.credit-box {
+  text-align: center; }
+  /* line 157, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .credit-box h2 {
+    font-size: 14px;
+    font-weight: 300; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 157, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .credit-box h2 {
+        font-size: 18px; } }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 157, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .credit-box h2 {
+        font-size: 23px; } }
+  /* line 168, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .credit-box .the-help {
+    position: absolute;
+    right: 16px;
+    top: 16px; }
+  /* line 175, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .credit-box h3 {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: -6px;
+    margin-top: 12px; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 175, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .credit-box h3 {
+        font-size: 15px; } }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 175, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .credit-box h3 {
+        font-size: 21px; } }
+    /* line 186, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .credit-box h3 + span.avail-credit-sum {
+      font-size: 36px;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 16px; }
+      @media only screen and (min-width: 40.0625em) {
+        /* line 186, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .credit-box h3 + span.avail-credit-sum {
+          font-size: 42px; } }
+      @media only screen and (min-width: 64.0625em) {
+        /* line 186, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .credit-box h3 + span.avail-credit-sum {
+          font-size: 56px; } }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 201, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .credit-box .avail-credit {
+      text-align: left; } }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 207, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .credit-box .credit-actions {
+      margin-top: 16px; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 207, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .credit-box .credit-actions {
+      margin-top: 26px; } }
+
+/* line 217, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.credit-settings-box {
+  margin-top: -40px;
+  padding-top: 40px;
+  background-image: url(../img/grey-blob.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 300px;
+  background-position: -120% 10%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 217, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .credit-settings-box {
+      background-size: 400px;
+      background-position: -10% 10%; } }
+
+/* line 233, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.nl-wrapper {
+  position: relative;
+  margin-bottom: 56px; }
+  /* line 236, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .nl-wrapper .the-help {
+    position: absolute;
+    top: 12px;
+    right: 28px; }
+
+/* line 243, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+p.settings-nl {
+  width: 80%;
+  margin: 18px 0;
+  padding: 0 0 0 36px;
+  line-height: 2;
+  font-size: 21px; }
+  @media only screen and (min-width: 40.0625em) {
+    /* line 243, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    p.settings-nl {
+      width: 60%;
+      font-size: 27px; } }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 243, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    p.settings-nl {
+      font-size: 32px; } }
+
+/* line 262, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.stats-box {
+  background: #63f5a4;
+  text-align: center;
+  color: #262626;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  margin-top: -50px; }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 262, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .stats-box {
+      text-align: left;
+      margin-top: -90px; } }
+  /* line 274, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .stats-box header {
+    position: relative; }
+    /* line 276, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .stats-box header h2 {
+      font-size: 21px;
+      font-weight: 500; }
+      @media only screen and (min-width: 40.0625em) {
+        /* line 276, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .stats-box header h2 {
+          font-size: 36px; } }
+      @media only screen and (min-width: 64.0625em) {
+        /* line 276, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .stats-box header h2 {
+          font-size: 42px; } }
+    /* line 286, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .stats-box header .expand-panel {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    /* line 291, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .stats-box header p {
+      font-size: 12px; }
+      @media only screen and (min-width: 40.0625em) {
+        /* line 291, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .stats-box header p {
+          font-size: 16px; } }
+      @media only screen and (min-width: 64.0625em) {
+        /* line 291, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .stats-box header p {
+          font-size: 21px; } }
+
+/* line 304, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.shadow-box.spending-breakdown-box {
+  margin-top: -20px;
+  z-index: 3; }
+
+/* line 312, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.spending-breakdown-box header {
+  position: relative; }
+  /* line 314, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .spending-breakdown-box header h2 {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center; }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 314, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .spending-breakdown-box header h2 {
+        font-size: 21px;
+        text-align: left; } }
+  /* line 323, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .spending-breakdown-box header .expand-panel {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+/* line 329, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.spending-breakdown-box .spend-categories {
+  font-size: 18px;
+  font-weight: 500; }
+  @media only screen and (min-width: 64.0625em) {
+    /* line 329, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .spending-breakdown-box .spend-categories {
+      font-size: 32px; } }
+  /* line 335, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .spending-breakdown-box .spend-categories li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    text-align: center; }
+    @media only screen and (min-width: 64.0625em) {
+      /* line 335, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .spending-breakdown-box .spend-categories li {
+        text-align: left; } }
+  /* line 344, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+  .spending-breakdown-box .spend-categories a {
+    color: #262626;
+    line-height: 0.5;
+    text-decoration: none; }
+    /* line 348, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .spending-breakdown-box .spend-categories a .spend-breakdown {
+      display: block;
+      font-weight: 200;
+      font-size: 14px; }
+      @media only screen and (min-width: 64.0625em) {
+        /* line 348, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .spending-breakdown-box .spend-categories a .spend-breakdown {
+          font-size: 23px;
+          padding-left: 42px; } }
+    /* line 357, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+    .spending-breakdown-box .spend-categories a .key {
+      width: 11px;
+      height: 11px;
+      margin: 0 auto;
+      border-radius: 4px;
+      background: #262626;
+      display: block; }
+      /* line 364, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .spending-breakdown-box .spend-categories a .key.key-1 {
+        background-color: #63f5a4; }
+      /* line 367, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .spending-breakdown-box .spend-categories a .key.key-2 {
+        background-color: #41dadc; }
+      /* line 370, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .spending-breakdown-box .spend-categories a .key.key-3 {
+        background-color: #fbb256; }
+      /* line 373, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+      .spending-breakdown-box .spend-categories a .key.key-4 {
+        background-color: #f46a6e; }
+      @media only screen and (min-width: 64.0625em) {
+        /* line 357, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+        .spending-breakdown-box .spend-categories a .key {
+          margin-right: 12px;
+          width: 20px;
+          height: 20px;
+          display: inline-block; } }
+
+/* line 392, /Applications/MAMP/htdocs/Appily-Vanilla/scss/main.scss */
+.svg-clipped {
+  -webkit-clip-path: url(#svgPath);
+  clip-path: url(#svgPath); }
+
+/*# sourceMappingURL=main.css.map */

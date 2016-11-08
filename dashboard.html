@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.typekit.net/ojy6fhm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="js/vendor/snap.svg-min.js"></script>
+  </head>
+  <body class="dashboard">
+   
+   
+   <div class="container">
+  <div class="menu-wrap">
+      <nav class="menu">
+        <img src="img/smile-white.svg" class="small-green-smile" /> 
+        <ul class="menu-items">
+          <li><a href="#">Your account</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">About appily</a></li>
+          <li><a href="#">Referrals</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+      <button class="close-button" id="close-button">Close Menu</button>
+      <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+              <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+          </svg>
+      </div>
+  </div>
+  <div class="content-wrap">
+      <div class="content">
+        <div class="row">
+          <div class="small-12 small-centered columns global-header">
+            <header> 
+              <button href="#menu" class="call-us-btn">
+                <span class="btn-text"><strong>Need help?</strong> 0800 123 456</span>
+              </button>
+              <a href="/" class="logo"><img src="img/logo.svg" class="logo-image" /></a>
+              <a href="#menu" class="menu-button" id="open-button"></a>
+            </header>
+            <h1>Welcome back Mike, here are your latest account details</h1>
+            <p>(Last updated yesterday, 2:41pm)</p>
+            <img src="img/smile.svg" class="small-green-smile" />
+          </div>
+        </div>
+
+
+        <div class="smile-header-container">
+          <div class="smile-header">
+          </div>
+        </div>
+
+
+
+        <!-- B A L A N C E  B O X -->
+        <div class="row balance-box">
+          <div class="small-12 large-8 medium-centered columns">
+            <div class="row">
+              <div class="small-12 medium-4 columns balance">
+                <h2>Your bank balance is</h2>
+                <span>&pound;300.00</span>
+                <a href="#" class="the-help mob-only" data-balloon="Emojis: 😀 😬 😁 😂 😃 😄 😅 😆" data-balloon-pos="left">
+                  <span class="help-text">Help</span>
+                  <span class="help-icon">?</span>
+                </a>
+              </div>
+              <div class="small-6 medium-4 columns repay">
+                <h3>Total to repay</h3> 
+                <span>&pound;80</span>
+              </div>
+              <div class="small-6 medium-4 columns next-statement">
+                <h3>Next statement</h3>
+                <span>12<sup>th</sup> Dec</span>
+              </div>
+              <div class="small-12 small-centered end med-up-only help-wrapper">
+                <a href="#" class="the-help" data-balloon="Emojis: 😀 😬 😁 😂 😃 😄 😅 😆" data-balloon-pos="left">
+                  <span class="help-text">Help</span>
+                  <span class="help-icon">?</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- C R E D I T  B O X -->
+        <div class="row">
+          <div class="small-10 small-centered columns shadow-box credit-box">
+            <h2>Your total credit (&pound;2,500)</h2>
+            <a href="#" class="the-help" data-balloon="Emojis: 😀 😬 😁 😂 😃 😄 😅 😆" data-balloon-pos="left">
+              <span class="help-text">Help</span>
+              <span class="help-icon">?</span>
+            </a>
+            <img src="img/smile.svg" class="small-green-smile" />
+              <div class="row">
+                <div class="small-12 medium-4 medium-offset-1 columns avail-credit">
+                  <h3>Your available credit is</h3>
+                  <span class="avail-credit-sum">&pound;2120.00</span>
+                </div>
+                <div class="small-12 medium-6 end columns">
+                  <div class="row credit-actions">
+                    <div class="small-6 columns">
+                      <button class="square-btn-sml ghost-btn">Repay</button>
+                    </div>
+                    <div class="small-6 columns">
+                      <button class="square-btn-sml aqua-btn">Borrow</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- S W I T C H E R -->
+          <div class="row credit-settings-box">
+            <div class="small-12 medium-8 medium-offset-2 columns end">
+              <h3 class="section-title">Your settings</h3>
+              <ul class="toggle-switches">
+                <li class="switch"><a href="/" class="switch-link">Repayments</a></li>
+                <li class="switch"><a href="/" class="switch-link inactive">Breathing Space</a></li>
+              </ul>
+              <div class="nl-wrapper">
+                <p class="settings-nl">Your repayments are currently set to 
+                  <select class="input-text inline-select" id="title">
+                    <option value="0">On</option>
+                    <option value="1">Off</option>
+                  </select>
+                  and it kicks in when you hit
+                  <select class="input-text inline-select" id="title">
+                    <option value="0">&pound;0</option>
+                    <option value="1">-&pound;10</option>
+                    <option value="2">-&pound;20</option>
+                    <option value="3">-&pound;30</option>
+                    <option value="4">-&pound;40</option>
+                    <option value="5">-&pound;50</option>
+                    <option value="6">-&pound;60</option>
+                  </select>
+                </p>
+                <a href="#" class="the-help" data-balloon="Emojis: 😀 😬 😁 😂 😃 😄 😅 😆" data-balloon-pos="left">
+                  <span class="help-text">Help</span>
+                  <span class="help-icon">?</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        <div class="smile-header-container aqua-container">
+          <div class="smile-header aqua-smile">
+          </div>
+        </div>
+        <!-- S T A T S  B O X -->
+        <div class="row stats-box">
+          <div class="small-12 columns">
+            <header>
+              <img src="img/smile-white.svg" class="small-green-smile" />
+              <h2>Your account stats</h2>
+              <p>3 month balance history</p>
+              <a href="#" class="the-help expand-panel mob-only">
+                <span class="help-icon">
+                  <img src="img/expand.svg" class="expand-icon" />
+                </span>
+              </a>
+            </header>
+          </div>  
+        </div>
+
+        <!-- 3 0  D A Y  S P E N D I N G  B R E A K D O W N  B O X -->
+        <div class="row">
+          <div class="small-10 small-centered columns shadow-box spending-breakdown-box">
+            <header>
+              <h2>Your 30 day breakdown</h2>
+                <a href="#" class="the-help expand-panel mob-only">
+                  <span class="help-icon">
+                    <img src="img/expand.svg" class="expand-icon" />
+                  </span>
+                </a>
+            </header>
+            <div class="row">
+              <div class="small-12 large-6 columns graph-panel">
+                &nbsp;
+              </div>
+              <div class="small-12 large-6 columns data-panel">
+                <ul class="spend-categories">
+                  <li>
+                    <a href="#" class="cat-1">
+                      <span class="key key-1"></span>
+                      Food
+                      <span class="spend-breakdown">(&pound;220.86 / 24&#37;)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="cat-2">
+                      <span class="key key-2"></span>
+                      Travel
+                      <span class="spend-breakdown">(&pound;220.86 / 24&#37;)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="cat-3">
+                      <span class="key key-3"></span>
+                      Shopping
+                      <span class="spend-breakdown">(&pound;220.86 / 24&#37;)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="cat-4">
+                      <span class="key key-4"></span>
+                      Utilities
+                      <span class="spend-breakdown">(&pound;220.86 / 24&#37;)</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+
+  <script src="js/vendor/classie.js"></script>
+  <script src="js/vendor/main3.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

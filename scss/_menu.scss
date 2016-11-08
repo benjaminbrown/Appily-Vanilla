@@ -1,0 +1,136 @@
+html, 
+body, 
+.container, 
+.content-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-wrap a {
+  color: $dark-main;
+  &:hover, &:focus {
+    color: $dark-tint;
+    text-decoration: underline;
+  }
+}
+
+.content-wrap {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.content {
+	position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.8);
+      content: '';
+      opacity: 0;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+      transition: opacity 0.3s, transform 0s 0.3s;
+      -webkit-transform: translate3d(100%,0,0);
+      transform: translate3d(100%,0,0); 
+  }
+}
+
+
+/* Close Button */
+.close-button {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	overflow: hidden;
+	text-indent: 16px;
+	border: none;
+	z-index: 1001;
+	background: transparent;
+	color: transparent;
+  &:before, &:after {
+  	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	background: $dark-main; 
+  }
+  &:before {
+   	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg); 
+  }
+  &:after {
+    webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);  
+  }
+}
+
+/* Menu */
+.menu-wrap {
+	position: absolute;
+	z-index: 1001;
+	width: 300px;
+	height: 100%;
+	-webkit-transform: translate3d(-300px,0,0);
+	transform: translate3d(-300px,0,0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+    .menu {
+	  background: $aqua-main;
+	  width: calc(100% - 120px);
+	  height: 100%;
+	  padding: 2em 1em;
+      color: #fff;
+        .menu-items {
+          margin-top: 18px;
+          font-weight: $font-heavy;
+          font-size: $base-font-size;
+          list-style-type: none;
+            li {
+              margin-bottom: 18px;
+      }
+    }
+  }
+}
+
+
+/* Morph Shape */
+.morph-shape {
+	position: absolute;
+	width: 120px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	fill: $aqua-main;
+	z-index: 1000;
+}
+
+/* Shown menu */
+.show-menu .menu-wrap {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.show-menu .content-wrap {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+	-webkit-transform: translate3d(100px,0,0);
+	transform: translate3d(100px,0,0);
+}
+
+.show-menu .content::before {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

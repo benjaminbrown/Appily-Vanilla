@@ -1,0 +1,65 @@
+// Typography
+$base-font-family: "filson-soft",sans-serif;
+
+// base font-size
+$base-font-size: 16px;
+
+
+// headings
+
+$h1-base: 22px;
+$h1-tablet: $h1-base * 2;
+$h1-desktop: $h1-base * 2.4;
+
+
+
+
+// paragraphs 
+
+$para-small: 12px;
+$para-xs: 11px;
+
+
+
+
+
+// font-weights
+$font-light: 200;
+$font-med: 300;
+$font-heavy: 500;
+  
+  
+  
+  
+
+h2.section-number {
+  font-weight: $font-heavy;
+  font-size: 24px;
+  @media #{$medium-up} {
+    font-size: 28px;
+  }
+  @media #{$large-up} {
+    font-size: 32px;
+  }
+}
+
+h3.section-title {
+  font-size: 12px;
+  font-weight: $font-med;
+  color: $dark-secondary;
+  padding-left: 24px;
+  background-image: url(../img/smile.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  &.indent {
+    margin-left: -24px;
+    margin-bottom: 30px;
+  }
+  @media #{$medium-up} {
+    font-size: 16px;
+  }
+  @media #{$large-up} {
+    font-size: 23px;
+  }
+}

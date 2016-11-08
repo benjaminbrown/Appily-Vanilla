@@ -1,0 +1,113 @@
+// Buttons
+
+button {
+  @include transition(all .2s ease);
+  &:hover {
+  transform: scale(1.1);
+  }
+}
+
+.square-btn-lrg {
+  border-radius: 4px;
+  padding: 24px;
+  color: $dark-main;
+  width: 100%;
+  font-weight: $font-med;
+  font-size: 18px;
+  text-align: center;
+}
+
+.square-btn-sml {
+  border-radius: 4px;
+  padding: 14px;
+  color: $dark-main;
+  width: 100%;
+  font-weight: $font-heavy;
+  font-size: 18px;
+  text-align: center;
+  
+  @media #{$medium-up} {
+      padding: 24px;
+  }
+}
+
+.pill-btn-sml {
+  text-align: center;
+  border-radius: 400px;
+  padding: 14px 20px;
+  color: $white-main;
+  font-weight: $font-heavy;
+  font-size: $base-font-size;
+  float: right;
+}
+
+.aqua-btn {
+  background-color: $aqua-main;
+  &:hover {
+    background-color: $aqua-tint;
+  }
+}
+
+.ghost-btn {
+  background-color: transparent;
+  border: 1px solid $light-main;
+  font-weight: $font-heavy;
+}
+
+.orange-btn {
+  background-color: $orange-main;
+  &:hover {
+    background-color: $orange-tint;
+  }
+}
+
+.the-help {
+  color: $dark-main;
+  font-size: $base-font-size;
+  @include transition(all .3s ease);
+  &:hover {
+    transform: scale(1.1);
+    color: $dark-tint;
+  }
+  .help-text {
+    display: none;
+    text-decoration: underline;
+    font-style: normal;
+    padding-right: 6px;
+    font-weight: $font-heavy;
+    @media #{$large-up} {
+      display: inline-block;
+    }
+  }
+  .help-icon {
+    width: 35px;
+    height: 29px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: $font-heavy;
+    padding-top: 3px;
+    float: right;
+    display: inline-block;
+    background-image: url(../img/help-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 35px 29px;
+    transform: scale(1);
+  }
+}
+
+.help-wrapper {
+  .help-text {
+    color: #fff;
+  }
+  .help-icon {
+    float: none;
+  }
+}
+
+.expand-panel {
+  .expand-icon {
+    width: 14px;
+    padding-left: 3px;
+  }  
+}
+
