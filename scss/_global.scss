@@ -82,10 +82,9 @@ $header-intro-text: 11px;
     right: 0;
     background: url(../img/menu.svg) no-repeat;
     @include transition(all .3s ease);
-  }
-
-  .menu-button:hover {
-	transform: scale(1.2)
+    &:hover {
+	  transform: scale(1.2)
+    }
   }
   
   .call-us-btn {

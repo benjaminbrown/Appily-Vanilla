@@ -481,8 +481,8 @@ body {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-  .global-header .menu-button:hover {
-    transform: scale(1.2); }
+    .global-header .menu-button:hover {
+      transform: scale(1.2); }
   .global-header .call-us-btn {
     background-color: #e8e8e8;
     background-image: url(../img/phone-icon.svg);
