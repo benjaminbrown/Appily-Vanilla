@@ -23,6 +23,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: $dark-main;
+  text-decoration: underline;
+  &:hover {
+    color: $dark-tint;
+  }
+}
+
 .mob-only {
   display: block;
   @media #{$medium-up} {

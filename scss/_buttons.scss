@@ -31,20 +31,40 @@ button {
   }
 }
 
-.pill-btn-sml {
+.pill-btn-sml,
+.pill-btn-xs {
+  width: auto;
   text-align: center;
   border-radius: 400px;
   padding: 14px 20px;
   color: $white-main;
   font-weight: $font-heavy;
   font-size: $base-font-size;
-  float: right;
+  &.right {
+    float: right;
+  }
+}
+
+.pill-btn-xs {
+  width: 100%;
+  font-size: $para-small;
+  font-weight: $font-light;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .aqua-btn {
   background-color: $aqua-main;
   &:hover {
     background-color: $aqua-tint;
+  }
+}
+
+.grey-btn {
+  background-color: $light-main;
+  color: $dark-main;
+  &:hover {
+    background-color: $light-tint;
   }
 }
 

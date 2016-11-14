@@ -430,6 +430,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+a {
+  color: #262626;
+  text-decoration: underline; }
+  a:hover {
+    color: #000000; }
+
 .mob-only {
   display: block; }
   @media only screen and (min-width: 40.0625em) {
@@ -678,19 +684,36 @@ button {
     .square-btn-sml {
       padding: 24px; } }
 
-.pill-btn-sml {
+.pill-btn-sml,
+.pill-btn-xs {
+  width: auto;
   text-align: center;
   border-radius: 400px;
   padding: 14px 20px;
   color: #ffffff;
   font-weight: 500;
-  font-size: 16px;
-  float: right; }
+  font-size: 16px; }
+  .pill-btn-sml.right,
+  .pill-btn-xs.right {
+    float: right; }
+
+.pill-btn-xs {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 40px; }
 
 .aqua-btn {
   background-color: #63f5a4; }
   .aqua-btn:hover {
     background-color: #54e885; }
+
+.grey-btn {
+  background-color: #e8e8e8;
+  color: #262626; }
+  .grey-btn:hover {
+    background-color: #cdcdcd; }
 
 .ghost-btn {
   background-color: transparent;
@@ -758,6 +781,18 @@ button {
       margin-top: 20px; } }
   .appform .help-text {
     display: none; }
+  .appform textarea {
+    border: 1px solid #e8e8e8;
+    box-shadow: none;
+    padding: 12px;
+    height: 100px;
+    font-size: 16px;
+    margin-bottom: 8px; }
+    .appform textarea:focus {
+      box-shadow: none;
+      border: 1px solid #e8e8e8; }
+  .appform .helpful-link {
+    font-size: 12px; }
 
 a.form-link-block {
   clear: both;
@@ -775,9 +810,26 @@ a.form-link-block {
   padding: 12px 0; }
 
 .form-row {
-  height: 60px;
-  margin-bottom: 20px;
+  height: auto;
+  margin-bottom: 40px;
   position: relative; }
+  .form-row.with-extras {
+    margin-bottom: 20px; }
+  .form-row .radio-check-surround {
+    margin-top: 8px;
+    margin-bottom: 16px; }
+    .form-row .radio-check-surround .radio-btn,
+    .form-row .radio-check-surround .checkbox-btn {
+      width: auto;
+      display: inline;
+      margin-bottom: 0; }
+    .form-row .radio-check-surround .input-btn-label {
+      display: inline;
+      width: auto;
+      line-height: 1.5;
+      font-weight: 200;
+      font-size: 12px;
+      clear: right; }
 
 .input-text {
   padding: 0;
@@ -789,14 +841,38 @@ a.form-link-block {
   font-size: 24px;
   color: #e8e8e8;
   font-weight: 300;
-  background: none; }
+  background-color: none; }
+  .input-text.input-background {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-left: 24px; }
+    .input-text.input-background.background-pound {
+      background-image: url(../img/pound-sign.svg);
+      background-position: 0 50%; }
+  .input-text.error {
+    border-color: #f46a6e; }
+
+.note-surround {
+  display: inline-block; }
+  .note-surround .form-note {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 8px; }
+    .note-surround .form-note.with-image {
+      width: 75%;
+      floaT: left; }
+    .note-surround .form-note + .note-image {
+      width: 44px;
+      float: right;
+      margin-top: 12px; }
 
 select.input-text {
   color: #ccc;
   background-image: url(../img/down-arrow.svg);
   background-repeat: no-repeat;
   background-size: 11px 8px;
-  background-position: 98% 50%; }
+  background-position: 98% 50%;
+  margin-bottom: 0; }
 
 .input-text.with-help {
   width: 75%; }
@@ -820,6 +896,9 @@ select.input-text:focus {
   color: #262626;
   font-weight: 500;
   outline: none; }
+  .input-text:focus.error,
+  select.input-text:focus.error {
+    border-color: #f46a6e; }
 
 input.input-text:not(:focus) {
   color: #262626; }
@@ -982,6 +1061,8 @@ select.input-text.inline-select {
     @media only screen and (min-width: 64.0625em) {
       .balance-box h3 + span {
         font-size: 56px; } }
+  .balance-box .help-wrapper {
+    margin-bottom: 20px; }
 
 .shadow-box {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1118,7 +1199,8 @@ p.settings-nl {
 
 .shadow-box.spending-breakdown-box {
   margin-top: -20px;
-  z-index: 3; }
+  z-index: 3;
+  margin-bottom: 80px; }
 
 .spending-breakdown-box header {
   position: relative; }

@@ -14,7 +14,21 @@
   .help-text {
     display: none;
   }
-  
+  textarea {
+    border: 1px solid $white-mid;
+    box-shadow: none;
+    padding: 12px;
+    height: 100px;
+    font-size: $base-font-size;
+    margin-bottom: 8px;
+    &:focus {
+      box-shadow: none;
+      border: 1px solid $white-mid;
+    }
+  }
+  .helpful-link {
+    font-size: $para-small;
+  }
 }
 
 a.form-link-block {
@@ -35,9 +49,30 @@ a.form-link-block {
 }
 
 .form-row {
-  height: 60px;
-  margin-bottom: 20px;
+  height: auto;
+  margin-bottom: 40px;
   position: relative;
+  &.with-extras {
+    margin-bottom: 20px;
+  }
+  .radio-check-surround {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    .radio-btn,
+    .checkbox-btn {
+      width: auto;
+      display: inline;
+      margin-bottom: 0;
+    }
+    .input-btn-label {
+      display: inline;
+      width: auto;
+      line-height: 1.5;
+      font-weight: $font-light;
+      font-size: $para-small;
+      clear: right;
+    }
+  }
 }
 
 .input-text {
@@ -50,8 +85,39 @@ a.form-link-block {
   font-size: 24px;
   color: $white-mid;
   font-weight: $font-med;
-  background: none;
+  background-color: none;
+  &.input-background {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-left: 24px;
+    &.background-pound {
+      background-image: url(../img/pound-sign.svg);
+      background-position: 0 50%;
+    }
+  }
+  &.error {
+    border-color: $red-main;
+  }
 }
+
+.note-surround {
+  display: inline-block;
+  .form-note {
+    font-size: $para-small;
+    font-style: italic;
+    margin-top: 8px;
+    &.with-image {
+      width: 75%;
+      floaT: left;
+    }
+    & +.note-image {
+      width: 44px;
+      float: right;
+      margin-top: 12px;
+    }
+  }
+}
+
 
 select.input-text {
   color: #ccc;
@@ -59,6 +125,7 @@ select.input-text {
   background-repeat: no-repeat;
   background-size: 11px 8px;
   background-position: 98% 50%;
+  margin-bottom: 0;
 }
 
 .input-text.with-help {
@@ -87,6 +154,9 @@ select.input-text:focus {
   color: $dark-main;
   font-weight: $font-heavy;
   outline: none;
+  &.error {
+    border-color: $red-main;
+  }
 }
 
 input.input-text:not(:focus) {
