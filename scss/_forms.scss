@@ -198,6 +198,7 @@ input.input-text:not(:focus) {
     .switch-link {
       width: 100%;
       color: $white-main;
+      text-decoration: none;
       display: inline-block;
       background: $orange-main;
       font-weight: $font-heavy;

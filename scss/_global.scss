@@ -155,3 +155,47 @@ $header-intro-text: 11px;
 img.small-green-smile {
   width: 25px;
 }
+
+footer {
+  .footer-signoff {
+    img, p {
+      position: relative;
+      z-index: 3;
+    }
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    font-size: $para-small;
+    background: $white-tint;
+    border-top: 4px solid $white-mid;
+    li {
+      display: block;
+      margin: 12px 0 0 0;
+      @media #{$large-up} {
+        display: inline-block;
+        margin: 24px 12px 24px 0;   
+      }
+    }
+  }
+  
+  .legal {
+    background-color: $white-tint;
+    padding: 24px;
+    padding-top: 160px;
+    margin-top: -160px;
+    @media #{$medium-up} {
+      padding-top: 130px;
+    }
+    @media #{$large-up} {
+      padding-top: 200px;
+      margin-top: -200px;
+    }
+    p {
+      font-size: $para-xs;
+    }
+  }
+}
+

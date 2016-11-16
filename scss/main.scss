@@ -29,6 +29,13 @@
     }
   }
   
+  &.footer {
+    margin-top: -60px;
+    @media #{$medium-up} {
+      margin-top: -120px;
+    }
+  }
+  
   @media #{$medium-up} {
     margin-top: -130px;
     height: 230px;
